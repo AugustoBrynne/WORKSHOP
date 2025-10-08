@@ -1,0 +1,55 @@
+repositorio remoto é tudo que eu terei no GITHUB
+
+git clone - clona repositorio remoto para a minha maquina
+
+qd eu mexo nos arquivos do meu pc, cabe a mim e mais ninguem depois fazer um:
+git add - seleciona aquilo que eu quero enviar para o meu repositorio remotoe o
+git commit -m "" confirma aquilo que pedi/desejo e entre aspas meto uma msg descritiva do que adicionei ao repositorio remoto
+git push -empurra para o repositorio remoto
+git pull - puxa do repositorio remoto~
+
+git branch feature/topping -cria branch
+git switch feature/topping -muda para a branch nova
+git switch -c feature/topping - cria e muda de branch
+
+git merge - juncao pegando tudo funciona um tanto quanto o add .
+git merge --no-ff - é a juncao s/ fast foward permite ter um melhor controle e visao do passado se necessario
+
+git fetch origin - download das mudancas no repositorio remoto
+ 
+git pull origin main - faz o fetch e merge para a minha branch local
+git push origin main - upload dos commits(alteracoes feitas na minha maquina local) para o meu repositorio
+
+git pull (servidor de onde baixar) 
+git push (servidor para onde mandar)
+
+
+upstream tracking
+git push -u origin feature/topping #define uma upstream que forca a origem qd fazemos push num branch
+
+se algures der merda:
+git restore --staged nomeDoFicheiro.txt
+
+para descartar todas mudancas:
+git restore nomeDoFicheiro
+
+para reverter uma merda num servidor remoto:
+git reverte HEAD -Isto é um commit que rejeita as mudancas feitas
+
+
+sem commit ainda:
+faz restore
+se fezz commit mas n o push: git reset
+se commit e push feitos entaoo use  git revert
+em duvida, revert
+
+
+    git stash bsicos
+    git stash push -m "info" - isto é uma pilha  que me protege 2x para garantir que de alguma forma eu n faço commits errados nem penduro o trabalho (minuto 35 do audio)
+
+abortar um merge:
+    git merge --abort 
+
+git rebase
+
+
